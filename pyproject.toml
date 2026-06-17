@@ -1,0 +1,22 @@
+[project]
+name = "langgraph-skeleton"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langgraph>=0.2",
+    "langgraph-checkpoint-sqlite>=2.0",
+    "langchain-core>=0.3",
+    "chromadb>=0.5",
+    "pypdf>=5.0",
+    "pydantic>=2.7",
+    "typing-extensions>=4.11",
+]
+
+[project.optional-dependencies]
+# 실제 OpenAI 호출용 (없으면 노트북은 StubLLM으로 폴백)
+llm = ["langchain-openai>=0.2"]
+# 그래프 PNG 시각화용
+viz = ["grandalf>=0.8"]
+notebook = ["jupyter>=1.0", "ipython>=8.0"]

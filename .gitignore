@@ -1,0 +1,17 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Agent runtime data (SQLite 메모리/체크포인트, Chroma 벡터스토어)
+agent_data/
+
+# Secrets — 키를 커밋하지 마세요
+.env
+
